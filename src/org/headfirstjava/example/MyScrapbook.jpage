@@ -1,0 +1,26 @@
+//package org.headfirstjava.example;
+
+The method main cannot be declared static; static methods can only be declared in a static or top level typeThe method main cannot be declared static; static methods can only be declared in a static or top level typeclass Clock {
+	String time;
+
+	public void setTime(String t) {
+		time = t;
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+
+
+//class ClockTestDrive {
+	public static void main(String[] args) {
+		
+		Clock c = new Clock();
+		
+		c.setTime("1245");
+		
+		String tod = c.getTime();
+		System.out.println("time: " + tod);
+	}
+}
